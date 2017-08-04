@@ -1,0 +1,52 @@
+.left {
+
+  &_col {
+    width: 200px;
+    background-color: #071621;
+    float: left;
+    position: relative;
+  }
+
+
+  &__logo {
+    margin: 20px 40px;
+    //padding-top: 72px;
+    //background: url(../img/logo.svg) no-repeat;
+    //background-size: contain;
+
+    &__svg {
+      display: block;
+      cursor: pointer!important;
+    }
+  }
+
+  &__sl {
+    color: #fff;
+    padding: 0 30px 10px;
+    text-align: center;
+    border-bottom: 1px solid #192A37;
+
+    & > * {
+      transition: all .3s;
+      //background: #27AE60;
+      border-radius: 5px;
+      padding: 15px 0;
+      cursor: pointer;
+
+      &:hover {
+        background: #27AE60;
+      }
+    }
+
+    &_up{
+      text-transform: uppercase;
+    }
+  }
+
+  &__nav {
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+  }
+
+}
