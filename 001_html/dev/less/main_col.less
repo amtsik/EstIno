@@ -1,0 +1,190 @@
+.main_col {
+  width: ~'calc(100% - 200px)';
+  float: right;
+  position: relative;
+
+}
+
+
+.slick_slider {
+
+  button {
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    svg {
+      display: block;
+    }
+  }
+
+  &__wrap {
+    opacity: 1;
+  }
+
+  .slick-dots {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .slick-arrow {
+      svg {
+        width: 9px;
+        height: 16px;
+        fill: #A6A39E;
+        transition: all .3s;
+      }
+
+      &.slick-prev {
+        transform: rotate(180deg);
+        margin-right: 12px;
+      }
+
+      &.slick-next {
+        margin-left: 12px;
+      }
+
+      &:hover {
+        svg {
+          fill: #747371;
+        }
+      }
+
+    }
+
+    & > li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & + li {
+        margin-left: 8px;
+      }
+
+      svg {
+        width: 15px;
+        height: 5px;
+        fill: rgba(0, 0, 0, 0.2);
+        transition: all .3s;
+      }
+
+      &:hover {
+        svg {
+          fill: rgba(0, 0, 0, 0.4);
+        }
+      }
+
+      &.slick-active {
+        svg{
+          transform: scaleX(1.8);
+          fill: #FFB54A;
+        }
+      }
+
+
+    }
+  }
+
+  &__index {
+    position: relative;
+
+    & .text {
+      position: absolute;
+      top: 70px;
+      left: 70px;
+      z-index: 0;
+      font-style: normal;
+      line-height: normal;
+      font-size: 18px;
+      color: #000000;
+      cursor: pointer;
+
+      & .fw {
+
+        &_300 {
+          font-weight: 300;
+        }
+
+        &_500 {
+          font-weight: 500;
+        }
+      }
+
+      & .fs {
+
+        &_18 {
+          font-size: 18px;
+        }
+
+        &_36 {
+          font-size: 36px;
+        }
+      }
+
+    }
+  }
+
+  .s_l_f {
+    position: absolute;
+    top: 200px;
+    left: 70px;
+    z-index: 1;
+  }
+
+}
+
+.s_l_f {
+
+  &__wrap {
+    background: #FFFFFF;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__input {
+    input {
+      background: #EEEEEE;
+      border-radius: 5px!important;
+      padding: 13px 17px;
+      margin-right: 8px;
+      font-size: 12px;
+    }
+  }
+
+  &__free {
+    background: #27AE60;
+    border-radius: 5px;
+    padding: 13px 35px 13px 65px;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: all .3s;
+
+    &:hover {
+      background: #30C971;
+    }
+  }
+
+  &__fb {
+    background: #3B5998;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    position: relative;
+
+    &:before {
+      
+    }
+  }
+}

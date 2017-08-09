@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EstCasino</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--<script src="js/build.js"></script>-->
+    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <!--<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>-->
+    <script type="text/javascript" src="js/bodymovin.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.js"></script>
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+    <!--<link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css">-->
+    <script src="vendor/sly/sly.js"></script>
+
+</head>
+<body>
+<section id="wrapper">
+    <div class="clearfix">
+        <section class="left_col">
+            <div class="clearfix">
+                <div class="left__logo">
+                    <a href="#" class="left__logo__svg">
+                        <object type="image/svg+xml" data="img/logo.svg"></object>
+                    </a>
+                </div>
+                <div class="left__sl fs_12">
+                    <div class="left__sl_up">
+                        <span>Sign Up</span>
+                    </div>
+                    <div class="left__sl_in">
+                        <span>Log In</span>
+                    </div>
+                </div>
+                <div class="left__nav">
+                    <div class="left__nav_list">
+                        <div class="left__nav_list_item">
+                            <a href="#" class="left__nav_list_item_a">Games</a>
+                        </div>
+                        <div class="left__nav_list_item">
+                            <a href="#" class="left__nav_list_item_a">Live Casino</a>
+                        </div>
+                        <div class="left__nav_list_item">
+                            <a href="#" class="left__nav_list_item_a">Promo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="left__je">
+                    <div class="left__je_text">Jackpot Estcasino</div>
+                    <div class="left__je_num">
+                        <span class="rect">2</span>
+                        <span class="rect">5</span>
+                        <span class="">,</span>
+                        <span class="rect">0</span>
+                        <span class="rect">0</span>
+                        <span class="rect">0</span>
+                        <span class="">,</span>
+                        <span class="rect">0</span>
+                        <span class="rect">0</span>
+                        <span class="rect">0</span>
+                        <span class="">$</span>
+                    </div>
+                    <div class="left__je_mon1">
+                        <object type="image/svg+xml" data="img/monetka1.svg"></object>
+                    </div>
+                    <div class="left__je_mon2">
+                        <object type="image/svg+xml" data="img/monetka2.svg"></object>
+                    </div>
+                </div>
+                <div class="left__news">
+                    <div class="left__news_row">
+                        <div class="svg">
+                            <object type="image/svg+xml" data="img/achivas/yellow_2.svg"></object>
+                        </div>
+                        <div class="txt">
+                            <span class="txt_name">Litlestar</span> just won €1200 in <a ref="#" class="txt_linc" title="Crazy Cows">Crazy Cows</a>, wonderful!
+                        </div>
+                    </div>
+                    <div class="left__news_row">
+                        <div class="svg">
+                            <object type="image/svg+xml" data="img/achivas/turquoise_2.svg"></object>
+                        </div>
+                        <div class="txt">
+                            <span class="txt_name">Mgillard24</span> used tahe valuable "4 free spins". Good luck now!
+                        </div>
+                    </div>
+                    <div class="left__news_row">
+                        <div class="svg">
+                            <object type="image/svg+xml" data="img/achivas/gold_100.svg"></object>
+                        </div>
+                        <div class="txt">
+                            <span class="txt_name">vany5801</span> just won €4.8 in 1429 Uncharted Seas, wonderful!
+                        </div>
+                    </div>
+                </div>
+                <div class="left__list">
+                    <div class="left__list_item">
+                        <a href="#" class="left__list_item_a">Trending</a>
+                    </div>
+                    <div class="left__list_item">
+                        <a href="#" class="left__list_item_a">Top Rated</a>
+                    </div>
+                    <div class="left__list_item">
+                        <a href="#" class="left__list_item_a">Last Played</a>
+                    </div>
+                    <div class="left__list_item">
+                        <a href="#" class="left__list_item_a">Favorite Games</a>
+                    </div>
+                </div>
+                <div class="left__footer clearfix">
+                    <div class="left__footer__time">
+                        Time on site:
+                        <span class="minute">14</span>
+                        :
+                        <span class="second">59</span>
+
+                    </div>
+                    <div class="left__footer__lang" >
+                        <div class="left__footer__lang__back" onclick="langModalOn()"></div>
+                        <div class="left__footer__lang__wrap" onclick="langModalOn()">
+                            <div class="flag">
+                                <img src="img/flags/est.svg" alt="EST">
+                            </div>
+                            <div class="lang">est</div>
+                        </div>
+                        <div class="left__footer__lang__modal" onclick="langModalOn()">
+                            <div class="row" >
+                                <div class="flag">
+                                    <img src="img/flags/est.svg" alt="EST">
+                                </div>
+                                <div class="lang">est</div>
+                            </div>
+                            <div class="row">
+                                <div class="flag">
+                                    <img src="img/flags/ru.svg" alt="RU">
+                                </div>
+                                <div class="lang">ru</div>
+                            </div>
+                            <div class="row">
+                                <div class="flag">
+                                    <img src="img/flags/en.svg" alt="EN">
+                                </div>
+                                <div class="lang">en</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main_col">
+
+            <div class="slick_slider">
+
+                <div class="s_l_f">
+                    <div class="s_l_f__wrap">
+                        <div class="s_l_f__input">
+                            <input type="text" placeholder="Your email">
+                        </div>
+                        <div class="s_l_f__free">
+                            <span class="s_l_f__free_svg"></span>
+                            free sign up
+                        </div>
+                        <div class="s_l_f__fb"></div>
+                        <div class="s_l_f__tw"></div>
+                        <div class="s_l_f__go"></div>
+                    </div>
+                </div>
+
+                <div class="slick_slider__wrap">
+                    <div class="slick_slider__index">
+                        <div class="text">
+                            <p class="fw_300 fs_18">Welcome package:</p>
+                            <p class="fw_500 fs_36">555 euro bonus,</p>
+                            <p class="fw_300 fs_36">up to 200%, <span class="fw_500">150 free spins</span></p>
+                        </div>
+                        <img src="img/topslider/slide_1.svg" alt="king">
+                    </div>
+                    <div class="slick_slider__index">
+                        <img src="img/topslider/slide_1.svg" alt="2">
+                    </div>
+                    <div class="slick_slider__index">
+                        <img src="img/topslider/slide_1.svg" alt="3">
+                    </div>
+                    <div class="slick_slider__index">
+                        <img src="img/topslider/slide_1.svg" alt="4">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--<div id="bm" style="width: 110px "></div>-->
+</section>
+<script>
+    function langModalOn() {
+        document.querySelector('.left__footer__lang').classList.toggle('active');
+    };
+
+    $( document ).ready(function() {
+        console.log( "ready!" );
+        $('.slick_slider__wrap').slick({
+            dots: true,
+            infinite: true,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+
+//        var animation = bodymovin.loadAnimation({
+//            container: document.getElementById('bm'),
+//            render: 'svg',
+//            loop: true,
+//            autoplay: true,
+//            path: 'King.json'
+//        })
+    });
+
+
+
+
+    
+</script>
+</body>
+</html>

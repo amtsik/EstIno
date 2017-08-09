@@ -1,0 +1,16 @@
+<svg width="19" height="13" viewBox="0 0 19 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>image 3</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(7746 -2538)">
+<g id="image 3">
+<use xlink:href="#path0_fill" fill="url(#pattern0)" transform="translate(-7746 2538)"/>
+</g>
+</g>
+<defs>
+<pattern id="pattern0" patternUnits="objectBoundingBox" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="matrix(0.0120482 0 0 0.0176089 0 -0.0370714)"/>
+</pattern>
+<path id="path0_fill" d="M 0 0L 19 0L 19 13L 0 13L 0 0Z"/>
+<image id="image0" width="83" height="61" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAAA9CAYAAADRTFUqAAABAklEQVR4Ae3ZsQ3CMABFQRtFokzDMszFEAySXRiFhiGMssN1eR7gFadvN57P12+NDhHY1v1BQkXGuIXgBMJ0li0TWoYZphSArd7MMKEATLXMMKEATLXMMKEATLXMMKEATLXMMKEATLXMMKEATLVMiLl9P2+Yu3ZqjjH6UEMb6JojyDMTZphQAKZaZphQAKZaZphQAKZaZphQAKZaZphQAKZaZphQAKZaZphQAKZaZphQAKZaJsTc9n2HuWun5nEc/QGhDcy1VpgIszcTQZ6ZMMOEAjDVMsOEAjDVMsOEAjDVMsOEAjDVMsOEAjDVMsOEAjDVMsOEAjDVMsOEAjDVMiHmHzrMDnA9E9E0AAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
