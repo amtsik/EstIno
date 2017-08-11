@@ -7,7 +7,7 @@
     <!--<script src="js/build.js"></script>-->
     <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
     <!--<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>-->
-    <script type="text/javascript" src="js/bodymovin.js"></script>
+    <script type="text/javascript" src="vendor/bodymovin/bodymovin.js"></script>
     <script type="text/javascript" src="vendor/slick/slick.js"></script>
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
     <!--<link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css">-->
@@ -27,19 +27,19 @@
     $( document ).ready(function() {
         console.log( "ready!" );
 
-        var animation = bodymovin.loadAnimation({
-            container: document.getElementById('bm'),
-            render: 'svg',
-            loop: true,
-            autoplay: true,
-            path: 'King.json'
-        })
+//        var animation = bodymovin.loadAnimation({
+//            container: document.getElementById('bm'),
+//            render: 'svg',
+//            loop: true,
+//            autoplay: true,
+//            path: 'King.json'
+//        });
         var animation = bodymovin.loadAnimation({
             container: document.getElementById('bm1'),
             render: 'svg',
             loop: true,
             autoplay: true,
-            path: 'King.json'
+            path: 'data.json'
         })
     });
 
