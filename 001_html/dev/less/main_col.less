@@ -390,12 +390,13 @@
         }
 
         svg {
-          & > g:nth-child(2) {
-            animation: rotate_l  4.5s linear;
+          & > g:nth-child(1) {
+            animation: rotate_l  10s infinite linear;
             transform: scale(1.25) rotate(180deg);
           }
-          & > g:nth-child(3) {
-            animation: rotate_r  4.5s linear;
+          & > g:nth-child(2) {
+            //animation: rotate_r  4.5s infinite linear;
+            animation: rotate_r  10s infinite linear;
             transform: scale(1.25) rotate(-180deg);
           }
         }
@@ -422,10 +423,10 @@
 
       &:nth-child(1){
         & .svg {
-          width: 110px;
-          height: 80px;
-          margin-top: -44px;
-          margin-left: -55px;
+          width: 115px;
+          height: 130px;
+          margin-top: -66px;
+          margin-left: -57px;
 
           svg {
             //margin-top: -33px;
@@ -436,10 +437,10 @@
 
       &:nth-child(2){
         & .svg {
-          width: 104px;
-          height: 80px;
-          margin-top: -40px;
-          margin-left: -52px;
+          width: 105px;
+          height: 115px;
+          margin-top: -54px;
+          margin-left: -53px;
 
           svg {
             //margin-top: -31px;
@@ -451,8 +452,8 @@
       &:nth-child(3){
         & .svg {
           width: 100px;
-          height: 60px;
-          margin-top: -30px;
+          height: 110px;
+          margin-top: -49px;
           margin-left: -50px;
 
           svg {
@@ -464,10 +465,10 @@
 
       &:nth-child(4){
         & .svg {
-          width: 106px;
-          height: 70px;
-          margin-top: -35px;
-          margin-left: -53px;
+          width: 110px;
+          height: 130px;
+          margin-top: -63px;
+          margin-left: -55px;
 
 
           svg {
@@ -479,10 +480,10 @@
 
       &:nth-child(5){
         & .svg {
-          width: 95px;
-          height: 80px;
-          margin-top: -40px;
-          margin-left: -47px;
+          width: 100px;
+          height: 110px;
+          margin-top: -55px;
+          margin-left: -50px;
 
           svg {
             //margin-top: -33px;
@@ -748,12 +749,23 @@
     &_left {
       //padding-right: 50px;
       max-width: ~'calc(100% - 300px)';
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-      //padding-top: 20px;
+      //display: flex;
+      //justify-content: space-between;
+      //align-items: center;
+      //flex-direction: column;
+      //flex-wrap: wrap;
+      padding-top: 20px;
+
+      & > * {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+      }
+
+
     }
 
     &_right {
@@ -763,6 +775,7 @@
       align-items: start;
       flex-direction: row;
       flex-wrap: wrap;
+      padding-top: 20px;
 
       & img[src="img/Footer/logo_republic_Estonia.svg"] {
         margin-top: -8px;
@@ -771,7 +784,7 @@
 
     .linc {
       margin-right: 25px;
-      padding-bottom: 30px;
+      //padding-bottom: 30px;
 
 
       &:last-child {
@@ -834,6 +847,29 @@
 
 
 }
+
+
+//попап поиска
+
+.popup {
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #000000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s;
+
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+
 
 //слайдер
 
@@ -1090,14 +1126,17 @@
   from {
     transform: scale(1) rotate(0deg);
   }
-  20% {
+  10% {
     transform: scale(1.25) rotate(0deg);
   }
-  80% {
-    transform: scale(1.25) rotate(90deg);
+  50% {
+    transform: scale(1.25) rotate(180deg);
+  }
+  90% {
+    transform: scale(1.25) rotate(360deg);
   }
   to {
-    transform: scale(1.25) rotate(180deg);
+    transform: scale(1) rotate(360deg);
   }
 }
 
@@ -1105,13 +1144,16 @@
   from {
     transform: scale(1) rotate(0deg);
   }
-  20% {
+  10% {
     transform: scale(1.25) rotate(0deg);
   }
-  80% {
-    transform: scale(1.25) rotate(-90deg);
+  50% {
+    transform: scale(1.25) rotate(-180deg);
+  }
+  90% {
+    transform: scale(1.25) rotate(-360deg);
   }
   to {
-    transform: scale(1.25) rotate(-180deg);
+    transform: scale(1) rotate(-360deg);
   }
 }
